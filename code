@@ -1,0 +1,18 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+public class MyClass {
+  static  void total(int x,int p){
+        int c=x+(x*(100-p)/100);
+        while(c>0){
+            c=c+x*((100-p)/100);
+        }
+        System.out.print(c);
+    }
+    public static void main(String args[]) {
+     Scanner sc=new Scanner(System.in);
+     int x=sc.nextInt();
+     int p=sc.nextInt();
+     total(x,p);
+    }
+}
